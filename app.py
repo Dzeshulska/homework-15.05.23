@@ -16,7 +16,7 @@ driver.implicitly_wait(0.5)
 
 driver.get("https://medium.com/")
 time.sleep(5)
-elem = driver.find_elements(By.XPATH,  '/html/body/div[1]/div/div[1]/nav/div/a[1]')
+elem = driver.find_elements(By.LINK_TEXT, "//*[text()='our story]")
 print(elem)
 time.sleep(10)
 
